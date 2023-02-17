@@ -21,4 +21,8 @@ dart create -t console-full nome_do_projeto
 
 <p><img src="/assets/images/project_structure.png" alt="project_structure" width="240px"></p>
 
-📁*bin* => 
+- :file_folder:: .dart_tool => teste
+- :file_folder: bin
+- :file_folder: lib
+- :file_folder: test
+- :gear:
