@@ -19,4 +19,6 @@ dart create -t console-full nome_do_projeto
 
 ## Estrutura de um projeto em Dart
 
-<p><img src="/images/project_structure.png" alt="project structure" width="240px"></p>
+<p><img src="http://../assets/images/project_structure.png" alt="project_structure" width="240px"></p>
+
+📁*bin* => 
