@@ -27,7 +27,7 @@ void main() {
 
   //! Baseado na lista acima.
   //! 1 - Remova os pacientes duplicados e apresente a nova lista
-  final listaPessoas = pessoas.toSet();
+  final listaPessoas = pessoas.toSet().toList();
   print(listaPessoas);
 
   //! 2 - Me mostre a quantidade de pessoas por sexo (Masculino e Feminino) e depois me apresente o nome delas
