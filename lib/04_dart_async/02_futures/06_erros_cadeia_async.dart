@@ -1,5 +1,20 @@
 void main() {
-  func1().then((value) => func2()).then((value) => func3()).then((print));
+  // os then encadeados são executados enquanto a função não apresentar erro
+  // nesse caso o func2 está apresentando erro, logo, a func3 não será executada,
+  // mas se usarmos a função onError: (){} podemos tratar o erro e retornar o passo
+  // seguinte que será dado, nesse caso executar a func3.
+
+  // resumindo: Em uma chamada em cadeia, pode-se tratar os erros usando somente
+  // o catchError no final das cadeias, ou o onError ao longo da cadeia nas funções
+  // necessárias.
+  func1()
+      .then((value) => func2())
+      .then((value) => func3(), onError: (error) {
+        print('Tratando erro da func2');
+        return func3();
+      })
+      .then(print)
+      .catchError((error) => print('Erro em alguma das chamadas'));
 }
 
 Future<String> func1() {
