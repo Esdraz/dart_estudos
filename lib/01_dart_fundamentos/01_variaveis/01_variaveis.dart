@@ -10,9 +10,16 @@ void main() {
 
   bool maiorDeIdade = true;
 
+  // dynamic recebe qualquer tipo de valor
   dynamic numero3 = 5;
   numero3 = 12.2;
   numero3 = 'agora virei uma String';
+  numero3 = false;
+
+  // Object recebe qualquer tipo de valor e é a classe básica para todos os objetos no dart, excert o null
+  Object objetoQualquer = 1.2;
+  objetoQualquer = 'que coisa não?';
+  objetoQualquer = true;
 
   var numero4 = 10;
   numero4 = 5;

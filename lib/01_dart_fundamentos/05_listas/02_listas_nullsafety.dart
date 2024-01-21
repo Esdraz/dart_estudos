@@ -23,4 +23,6 @@ void main() {
 
   // não precisa especificar o null
   List<String?>? nomesListaAceitaNulos1;
+
+  print(nomesInternosAceitaNulos);
 }
